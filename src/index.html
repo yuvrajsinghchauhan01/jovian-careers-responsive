@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my second Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <img id="logo" src="download.png" alt="jovian logo">
+    </div>
+    <img id="banner" src="estee-janssens-zEqkUMiMxMI-unsplash.jpg" alt="paper and pencils" >
+    <h1>About Jovian</h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sit non quas quibusdam sequi vitae ipsum, pariatur temporibus delectus laboriosam quo dolores rem illum laborum voluptatem minus? Enim pariatur libero praesentium maxime cum similique possimus commodi dolorum. Sed, similique sunt earum, aspernatur pariatur consequatur eum atque soluta esse accusantium architecto?</p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+                <ol>
+                    <li>
+                        <a href="#" target="_blank"> Lorem, ipsum dolor</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
+                    </li>
+                </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="scott-graham-5fNmWej4tAA-unsplash.jpg" alt="Macbooks">
+        </div>
+    </div>
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+
+        <table  id="jobs-table">
+            <thead>
+                <tr class="jobs-header-row">
+                    <th rowspan="2">Job Title</th>
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Posted On</th>
+                </tr>
+
+                <tr class="jobs-header-row">
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="jobs-data-row">
+                    <td>Frontend Developer</td>
+                    <td>Bengaluru</td>
+                    <td>India</td>
+                    <td>₹12,00,000</td>
+                    <td>Mar 3, 2023</td>
+                </tr>
+
+                <tr class="jobs-data-row">
+                    <td>Full Stack Developer</td>
+                    <td>New Delhi</td>
+                    <td>India</td>
+                    <td>₹15,00,000</td>
+                    <td>Feb 1, 2023</td>
+                </tr>
+
+                <tr class="jobs-data-row">
+                    <td>Data Scientist</td>
+                    <td>San Francisco</td>
+                    <td>USA</td>
+                    <td>$175,000</td>
+                    <td>Dec 22, 2022</td>
+                    
+                </tr>
+
+                <tr class="jobs-data-row">
+                    <td>Machine Learning Engineer</td>
+                    <td colspan="2" id="Remote">Remote</td>
+                    
+                    <td>$80,000</td>
+                    <td>Sep 19, 2022</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- Application Form -->
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form action="" id = "application-form">
+
+            <div class="form-group">
+                <label for="name">Full Name</label><br/>
+                <input type="text" id="name" name="Name" required placeholder="Raju Shaikh">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" name="Email Address" id="email" required placeholder="Raju101@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="Phone Number" id="phone" required placeholder="+917864376435">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="">Position Applied For</label><br>
+                <select id="Position" name="Position Applied" required>
+                    <option value="">Select position</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Full Stack">Full Stack Developer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="ML Engineer">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea name="coverletter" id="coverletter"  rows="5"
+                 placeholder="Explain what makes you suitable for the job."></textarea>             
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+    
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="#" target="_blank">Courses</a>
+            </li>
+            <li>
+                <a href="#" target="_blank">Programs</a>
+            </li>
+            <li>
+                <a href="#" target="_blank">Youtube</a>
+            </li>
+        </ul>
+        <span class="copyright">© 2023, Jovian</span>
+    </div>
+   
+</body>
+</html>
